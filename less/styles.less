@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+@import "../assets/bootstrap-3.0.0/less/bootstrap.less";
+
+@import "variables.less";
+
+
+
+// TODO A REMETTRE DANS VARIABLES
+
+// Typography
+// -------------------------
+@font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif;
+
+// Iconography
+// -------------------------
+@icon-font-path:          "../assets/bootstrap-3.0.0/fonts/";
+@icon-font-name:          "glyphicons-halflings-regular";
+// TODO A REMETTRE DANS VARIABLES / FIN
+
+// Positions
+
+.relative { position: relative; }
+
+// Styling Elements
+body { padding-top:95px; }
+
+// CUSTOM VARIABLES
+
+@height:				55px; 
+
+// CUSTOM COMPONENTS
+
+// Navbar
+
+.navbar { margin-bottom:0; }
+.navbar,
+	.navbar-fixed-top { border:0; }
+
+.navbar-default { height:40px; }
+.navbar-brand { display:block; line-height:@height; padding:0 10px; background: url('../im/logo/logo.png') no-repeat; }
+
+.nav-tabs { border:0; }
+.nav-tabs > li > a { border:0; border-radius:0; line-height:@height; padding:0 40px; }
+.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus { border:0; }
+.nav-tabs > li > a:hover {  }
+.nav > li > a:hover, 
+	.nav > li > a:focus {  } 
+
+
+// TABLES
+
+table { margin: 20px 0 0 20px; }
+.table thead > tr > th, 
+.table tbody > tr > th, 
+.table tfoot > tr > th, 
+.table thead > tr > td, 
+.table tbody > tr > td, 
+.table tfoot > tr > td { padding:0 0 0 20px ; vertical-align: middle; height:45px; }
+.table tr:hover { background-color: #c00; }	
+
+
+thead { text-transform:uppercase; }
+
+
+// DEBUG
+section { height:100%; }
+aside { background-color:#f1f1f1; height:1000px; }
+article { background-color:#fff; height:2000px; }
+
+
+
+
+
+
