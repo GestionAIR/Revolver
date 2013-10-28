@@ -24,13 +24,23 @@
 .relative { position: relative; }
 
 // Styling Elements
-body { padding-top:95px; }
+body { padding-top:95px; color:#444; }
 
 // CUSTOM VARIABLES
 
 @height:				55px; 
 
 // CUSTOM COMPONENTS
+
+// Progress Bar
+
+@barColor: #00aaac;
+@overlayColor: #fffde8;
+@backColor: #2f3439;
+
+.progress-radial { float: left; position: relative; width: 30px; height: 30px; border-radius: 50%;background-color: @barColor; margin-left: 24px; }
+
+.progress-radial .overlay { position: absolute; width: 20px; height: 20px; border-radius: 50%; background-color: #fff; margin-left: 5px; margin-top: 5px; text-align: center; line-height: 20px; font-size: 11px; }
 
 // Navbar
 
@@ -60,10 +70,12 @@ table { margin: 20px 0 0 20px; }
 .table thead > tr > td, 
 .table tbody > tr > td, 
 .table tfoot > tr > td { padding:0 0 0 20px ; vertical-align: middle; height:45px; }
-.table tr:hover { background-color: #c00; }	
+.table-hover > tbody > tr:hover > td,
+	.table-hover > tbody > tr:hover > th { background-color: #fbfbfb; }
 
+.table thead > tr > th { border-bottom:1px solid #DDD; text-transform:uppercase; }
 
-thead { text-transform:uppercase; }
+th { font-size: 12px; }
 
 
 // DEBUG
