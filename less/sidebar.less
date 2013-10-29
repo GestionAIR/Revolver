@@ -18,9 +18,13 @@ transform:rotate(90deg);
 /* Boutons sidebar */
 .btn-group-vertical { margin-top: 0px; border-radius: 0; padding-top: 0;}
 .btn { border-radius: 0; font-size: 14px; text-align: left; padding: 10px 0 10px 65px; border: none; }
-.btn-group-vertical > .btn:first-child:not(:last-child) { border-radius: 0; border-bottom-left-radius: 0; }
+.btn-group-vertical > .btn:last-child:not(:first-child) { border-bottom-left-radius: 0; }
+.btn-group-vertical > .btn:first-child:not(:first-child), 
+.btn-group-vertical > .btn:first-child:not(:last-child) { border-bottom-left-radius: 0; }
 .btn-group, .btn-group-vertical { display: block; }
 .btn-default { background-color: #fefefe; }
-.btn-default:hover { background-color: #fcfcfc; }
-.btn:active { background-color: #fafafa; box-shadow: none;}
+.btn-default:hover { margin-left: -4px; background-color: #fcfcfc; border-left: 4px solid #00aaac;}
+.btn:active { background-color: #fafafa; box-shadow: none; border-left: 4px solid #00aaac; }
 .btn-title { text-transform: uppercase; font-size: 12px; font-weight: 900; padding-left: 45px; }
+
+.ml4 .btn-default:hover { margin-left: -4px; }
