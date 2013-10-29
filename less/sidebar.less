@@ -16,15 +16,15 @@ transform:rotate(90deg);
 .closed img { display: inline-block; cursor: pointer; float: right; margin-right: 20px; }
 
 /* Boutons sidebar */
-.btn-group-vertical { margin-top: 0px; border-radius: 0; padding-top: 0;}
-.btn { border-radius: 0; font-size: 14px; text-align: left; padding: 10px 0 10px 65px; border: none; }
+.btn-group-vertical { margin-top: 0px; border-radius: 0; padding-top: 0; }
 .btn-group-vertical > .btn:last-child:not(:first-child) { border-bottom-left-radius: 0; }
 .btn-group-vertical > .btn:first-child:not(:first-child), 
 .btn-group-vertical > .btn:first-child:not(:last-child) { border-bottom-left-radius: 0; }
 .btn-group, .btn-group-vertical { display: block; }
-.btn-default { background-color: #fefefe; }
-.btn-default:hover { margin-left: -4px; background-color: #fcfcfc; border-left: 4px solid #00aaac;}
-.btn:active { background-color: #fafafa; box-shadow: none; border-left: 4px solid #00aaac; }
-.btn-title { text-transform: uppercase; font-size: 12px; font-weight: 900; padding-left: 45px; }
 
-.ml4 .btn-default:hover { margin-left: -4px; }
+.btn { background-color: #fefefe; border: 0; border-radius: 0; font-size: 14px; text-align: left; padding: 10px 0 10px 65px; border-left: 4px solid #fefefe; }
+.btn:hover { margin-left: -4px; background-color: #fcfcfc; border-left: 4px solid #00aaac; }
+.btn:active { background-color: #fafafa; border-left: 4px solid #00aaac; box-shadow: none; }
+.btn:focus { background-color: #fefefe; border-left: 4px solid #fefefe; box-shadow: none; }
+.btn-title { text-transform: uppercase; font-size: 12px; font-weight: 900; padding-left: 45px; border-left: 4px solid red; }
+.btn-title:hover { border-left: 4px solid red; background-color: #fefefe; }
