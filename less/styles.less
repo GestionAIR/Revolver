@@ -13,6 +13,8 @@
 // -------------------------
 @font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif;
 
+h1, h2, h3 { margin: 0; padding-left: 30px; }
+
 // Iconography
 // -------------------------
 @icon-font-path:          "../assets/bootstrap-3.0.0/fonts/";
@@ -22,10 +24,12 @@
 // Positions
 
 .relative { position: relative; }
+.col-md-10 { padding-left: 0; }
 
 // Styling Elements
 body { padding-top:95px; color:#444; }
-.col-md-10 article { background-color:none; border-left:1px solid #f6f6f6; }
+.sidebar { border-right: 1px solid #F5F5F5; padding-top: 30px; }
+article .col-md-10 { padding-left: 0; }
 
 // CUSTOM VARIABLES
 
@@ -34,11 +38,6 @@ body { padding-top:95px; color:#444; }
 // CUSTOM COMPONENTS
 
 // Progress Bar
-
-.timer { display:block; font-size: 35px; font-weight: 600; }
-.timer > #slice.gt50 { clip: rect(auto, auto, auto, auto); }
-.timer > #slice { position: absolute; width: 1em; height: 1em; clip: rect(0px,1em,1em,0.5em); }
-.timer > #slice > .pie { border: 0.1em solid #00aaac; position: absolute; width: 0.8em; height: 0.8em; clip: rect(0em,0.5em,1em,0em); -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; border-radius: 0.5em; }
 
 // Navbar
 
@@ -50,7 +49,7 @@ body { padding-top:95px; color:#444; }
 .navbar-brand { display:block; line-height:@height; padding:0 10px; background: url() no-repeat; }
 
 .nav-tabs { border:0; }
-.nav-tabs > li > a { border:0; border-radius:0; line-height:@height; padding:0 40px; }
+.nav-tabs > li > a { border:0; border-radius:0; line-height:@height; }
 .nav-tabs > li.active > a, 
 	.nav-tabs > li.active > a:hover, 
 	.nav-tabs > li.active > a:focus { border:0; }
@@ -61,8 +60,8 @@ body { padding-top:95px; color:#444; }
 
 // TABLES
 
-table {  }
-.table { border-color: #f6f6f6; margin: 20px 0 0 20px; }
+
+.table { border-color: #c00; margin:0; }
 .table thead > tr > th, 
 .table tbody > tr > th, 
 .table tfoot > tr > th, 
@@ -80,7 +79,7 @@ th { font-size: 12px; }
 // DEBUG
 section { height:100%; }
 aside { background-color:#f1f1f1; height:1000px; }
-article { background-color:#fff; height:2000px; }
+article { height:2000px; }
 
 
 
