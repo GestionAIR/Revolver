@@ -50,101 +50,103 @@
 		</nav>
 	</header>
 
+	
 	<section class="row">
-		<aside class="col-md-2">
-			<div class="btn-group-vertical affix">
-				<div class="sidebar">
-					<div class="open btn-group-vertical">
-						<button type="button" class="btn btn-default btn-title">En cours <span class="caret"></span></button>
-						<button type="button" class="btn btn-default">Administratif</button>
-  						<button type="button" class="btn btn-default">
-  						Commercial</button>
-  						<button type="button" class="btn btn-default">Opérationnel</button>
-  						<button type="button" class="btn btn-default">Divers</button>
+		<div class="col-md-2">
+			<aside class="">
+				<div class="btn-group-vertical affix">
+					<div class="sidebar">
+						<div class="open btn-group-vertical">
+							<button type="button" class="btn btn-default btn-title">En cours <span class="caret"></span></button>
+							<button type="button" class="btn btn-default">Administratif</button>
+	  						<button type="button" class="btn btn-default">
+	  						Commercial</button>
+	  						<button type="button" class="btn btn-default">Opérationnel</button>
+	  						<button type="button" class="btn btn-default">Divers</button>
+						</div>
+						<div class="closed btn-group-vertical">
+							<button type="button" class="btn btn-default btn-title">Archives <span class="caret"></span></button>
+						</div>
+						<div class="closed btn-group-vertical">
+							<button type="button" class="btn btn-default btn-title">Autres choses <span class="caret"></span></button>
+						</div>
 					</div>
-					<div class="closed btn-group-vertical">
-						<button type="button" class="btn btn-default btn-title">Archives <span class="caret"></span></button>
-					</div>
-					<div class="closed btn-group-vertical">
-						<button type="button" class="btn btn-default btn-title">Autres choses <span class="caret"></span></button>
-					</div>
-				</div>
-  			</div>
-		</aside>
+	  			</div>
+			</aside>
+		</div>
 		<article class="col-md-10">
-			<div class="table-responsive">	
-				<table class="table table-hover">
-					<thead>
-						<th>
+			<table class="table table-hover table-responsive">
+				<thead>
+					<th>
+						<div class="checkbox">
+						    <label><input type="checkbox"></label>
+						    <span class="caret"></span>
+						</div>
+					</th>
+					<th>Intitulé</th>
+					<th>Utilisateurs</th>
+					<th>Progression</th>
+					<th>Début</th>
+					<th>Fin</th>
+					<th>...</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
 							<div class="checkbox">
 							    <label><input type="checkbox"></label>
-							    <span class="caret"></span>
-							</div>
-						</th>
-						<th>Intitulé</th>
-						<th>Utilisateurs</th>
-						<th>Progression</th>
-						<th>Début</th>
-						<th>Fin</th>
-						<th>...</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<div class="checkbox">
-								    <label><input type="checkbox"></label>
-  								</div>
-							</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>
-								<!-- <div class="timer">
-									<div class="percent">90</div>
-									<div id="slice" class="gt50">
-										<div class="pie fill" style="-webkit-transform: rotate(360deg);"></div>
-										<div class="pie" style="-webkit-transform: rotate(290deg);"></div>	
-									</div>
-								</div> -->
-							</td>
-							<td>xx/xx/xxxx</td>
-							<td>xx/xx/xxxx</td>
-							<td>...</td>
-						</tr>
-						<tr class="">
-							<td>
-								<div class="checkbox">
-								    <label>
-								        <input type="checkbox">
-								    </label>
-  								</div>
-							</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>xx/xx/xxxx</td>
-							<td>xx/xx/xxxx</td>
-							<td>...</td>
-						</tr>
-						<tr class="">
-							<td>
-								<div class="checkbox">
-								    <label>
-								        <input type="checkbox">
-								    </label>
-  								</div>
-							</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>Lorem ipsum amet dolor</td>
-							<td>xx/xx/xxxx</td>
-							<td>xx/xx/xxxx</td>
-							<td>...</td>
-						</tr>
+								</div>
+						</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>
+							<!-- <div class="timer">
+								<div class="percent">90</div>
+								<div id="slice" class="gt50">
+									<div class="pie fill" style="-webkit-transform: rotate(360deg);"></div>
+									<div class="pie" style="-webkit-transform: rotate(290deg);"></div>	
+								</div>
+							</div> -->
+						</td>
+						<td>xx/xx/xxxx</td>
+						<td>xx/xx/xxxx</td>
+						<td>...</td>
+					</tr>
+					<tr class="">
+						<td>
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox">
+							    </label>
+								</div>
+						</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>xx/xx/xxxx</td>
+						<td>xx/xx/xxxx</td>
+						<td>...</td>
+					</tr>
+					<tr class="">
+						<td>
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox">
+							    </label>
+								</div>
+						</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>Lorem ipsum amet dolor</td>
+						<td>xx/xx/xxxx</td>
+						<td>xx/xx/xxxx</td>
+						<td>...</td>
+					</tr>
 
 
-					</tbody>
-				</table>
-			</div>
+				</tbody>
+			</table>
+				
 		</article>
 	</section>
 
