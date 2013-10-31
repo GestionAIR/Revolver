@@ -24,7 +24,7 @@ h1, h2, h3 { margin: 0; padding-left: 30px; }
 // Positions
 
 .relative { position: relative; }
-.col-md-10 { padding-left: 0; }
+.pl0 { padding-left: 0; }
 
 // Styling Elements
 body { padding-top:95px; color:#444; }
@@ -40,27 +40,27 @@ article .col-md-10 { padding-left: 0; }
 
 // Navbar
 
-.navbar { margin-bottom:0; }
+.navbar { margin-bottom:0; border-radius: 0; }
 .navbar,
 	.navbar-fixed-top { border:0; }
 
 .navbar-default { height:40px; }
 .navbar-brand { display:block; line-height:@height; padding:0 10px; background: url() no-repeat; }
 
-.nav-tabs { border:0; }
-.nav-tabs > li > a { border:0; border-radius:0; line-height:@height; padding:0 40px; }
+.nav-tabs { border:0; font-weight: 300; color:#fff; }
+.nav-tabs > li > a { border:0; border-radius:0; line-height:@height; padding:0 40px; color:#fff; margin-right:0; }
 .nav-tabs > li.active > a, 
 	.nav-tabs > li.active > a:hover, 
-	.nav-tabs > li.active > a:focus { border:0; }
-.nav-tabs > li > a:hover {  }
+	.nav-tabs > li.active > a:focus { border:0; background-color: #353535; color:#fff; }
+.nav-tabs > li > a:hover { background-color: #303030; color:#fff; }
 .nav > li > a:hover, 
-	.nav > li > a:focus {  } 
+	.nav > li > a:focus { background-color: #303030; } 
 
 
 // TABLES
 
 
-.table { border-color: #c00; margin:0; }
+.table { margin-top:10px; }
 .table thead > tr > th, 
 .table tbody > tr > th, 
 .table tfoot > tr > th, 
